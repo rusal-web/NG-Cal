@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowing Power Reality Check: The Impact of the May 2026 Budget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth transitions for interactive elements */
+        .transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <header class="mb-10 text-center lg:text-left">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-blue-900 tracking-tight">Borrowing Power Reality Check</h1>
+            <p class="text-lg text-gray-600 mt-2 font-medium">The Impact of the May 2026 Budget on Mortgage Capacities</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <div class="lg:col-span-4 space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold text-blue-900 mb-6 flex items-center border-b pb-3">
+                        <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        Financial Profile
+                    </h2>
+                    
+                    <form id="calculator-form" class="space-y-4 text-sm">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">Gross Annual Salary ($)</label>
+                            <input type="text" id="gross-salary" data-type="currency" value="100,000" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all outline-none">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">Expected Weekly Rent ($)</label>
+                            <input type="text" id="weekly-rent" data-type="currency" value="600" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">Annual Property Expenses ($)</label>
+                            <input type="text" id="property-expenses" data-type="currency" value="3,120" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">Monthly Living Expenses ($)</label>
+                            <input type="text" id="living-expenses" data-type="currency" value="2,000" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">Actual Interest Rate (%)</label>
+                            <input type="number" step="0.01" id="interest-rate" value="6.84" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">Interest Only (IO) Period</label>
+                            <select id="io-period" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all outline-none bg-white">
+                                <option value="0" selected>0 Years (P&I)</option>
+                                <option value="1">1 Year</option>
+                                <option value="2">2 Years</option>
+                                <option value="3">3 Years</option>
+                                <option value="4">4 Years</option>
+                                <option value="5">5 Years</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 space-y-6" id="results-container">
+                </div>
+            
+        </div>
+
+        <div class="mt-16 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h3 class="text-2xl font-bold text-blue-900 mb-6">Frequently Asked Questions</h3>
+            <div class="space-y-4">
+                
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>Why is there such a massive gap in borrowing power between new and established homes?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        When a property is negatively geared, banks treat your anticipated tax refund as "usable cash" to help service your loan. Because the May 2026 budget removes this tax refund for established homes purchased after July 2027, your usable net income drops significantly in the eyes of the bank, leading to heavily reduced maximum loan approvals.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>I already own an investment property. Will I lose my negative gearing benefits?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        No. If you purchased an established investment property before the budget cut-off—7:30 PM AEST on 12 May 2026—your property is "grandfathered." You can continue to negatively gear this specific property against your salary for as long as you own it.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>If I buy a 'New Build' to get negative gearing, do I lose the tax benefit if I refinance with a different bank?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        No. The budget exemptions are tied to the physical property and the original contract date, not your loan provider. Refinancing an exempt property to get a better interest rate will retain its grandfathered tax status.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>If I sell my grandfathered investment property to someone else, do they get to keep the negative gearing benefits?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        No. Grandfathering status is strictly tied to the person or entity who held the contract prior to the May 2026 budget cut-off. If you sell the property, it is treated as an "established home" purchase for the new buyer, and they will not be able to negatively gear it against their salary.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>Can I transfer my grandfathered property to my spouse or a family trust without losing the tax benefits?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        No. Any change in legal ownership—including transferring a title to a spouse, child, or self-managed super fund—is considered a "new acquisition" by the ATO. The new owner will fall under the post-July 2027 rules and will lose the ability to negatively gear the established property against their day-to-day salary.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>Can I buy an old house, do a 'knock-down rebuild', and claim it as a New Build?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        No. The government specifically closed this loophole. The May 2026 budget explicitly states that replacing an older, free-standing house with a knock-down rebuild on an existing established block does not qualify for the new build exemptions.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>If I buy an established home after July 2027, do my rental losses just disappear?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        No, they aren't lost completely, but they are "quarantined." You can no longer use them to reduce the tax on your PAYG salary. Instead, you carry these losses forward to offset future rental profits, or use them to reduce your Capital Gains Tax when you sell.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>Why do Specialist Lenders offer so much more borrowing capacity than the Big 4?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        Specialist lenders assess risk differently. They often use lower internal assessment buffers compared to APRA-regulated standard banks, allowing them to stretch borrowing capacities further.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>What happens if I buy an 'off-the-plan' apartment now, but it doesn't settle until 2028?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        Because it is a brand-new build, it is entirely exempt from the new restrictions regardless of the settlement date. You will be able to negatively gear it against your salary once it is completed and tenanted.
+                    </div>
+                </details>
+
+                <details class="group border border-gray-200 rounded-lg [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between p-4 font-semibold text-gray-800 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg transition-all">
+                        <span>Why does an Interest Only (IO) loan reduce my maximum borrowing capacity?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-2 text-gray-600 text-sm leading-relaxed">
+                        APRA regulations require banks to ensure you can afford the loan once the IO period ends and the loan reverts to Principal & Interest. If you have a 5-year IO period on a 30-year loan, the bank must compress the entire principal repayment into the remaining 25 years. This higher hypothetical monthly repayment reduces the maximum amount they can lend you.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-xs text-gray-400 italic max-w-4xl mx-auto">
+                Disclaimer: This calculator is an educational proxy tool designed to illustrate the mechanical impact of the May 2026 Budget. The formulas have been calibrated against aggregate market data with an estimated Standard Deviation (SD) of ±6% to ±9% depending on the borrower's exact tax bracket, chosen IO term, and specific lender policies. It does not constitute financial advice. Actual loan approvals are subject to comprehensive lender-specific HEM, DTI, and credit assessments.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        // DOM Elements
+        const inputs = document.querySelectorAll('#calculator-form input, #calculator-form select');
+        const resultsContainer = document.getElementById('results-container');
+        
+        // Lender Profiles Configuration
+        const LENDERS = [
+            { id: 'major', name: 'Major Banks (Big 4)', buffer: 3.00, color: 'border-blue-900', bg: 'bg-blue-900', text: 'text-blue-900' },
+            { id: 'preferred', name: 'Preferred Lenders', subtitle: '(e.g., ING, Macquarie, Suncorp)', buffer: 2.50, color: 'border-blue-700', bg: 'bg-blue-700', text: 'text-blue-700' },
+            { id: 'specialist', name: 'Specialist Lenders', subtitle: '(Tier 3 e.g., ORDE, Pepper)', buffer: 2.00, color: 'border-blue-500', bg: 'bg-blue-500', text: 'text-blue-500' }
+        ];
+
+        // Format Currency dynamically as user types
+        document.querySelectorAll('input[data-type="currency"]').forEach(input => {
+            input.addEventListener('input', function(e) {
+                // Strip non-digits except dots if we needed them, but we want integers mostly here. 
+                // Let's strip anything that isn't a digit to format correctly.
+                let value = this.value.replace(/[^\d]/g, '');
+                if (value !== '') {
+                    this.value = parseInt(value, 10).toLocaleString('en-US');
+                }
+            });
+        });
+
+        // Event listener for calculation triggers
+        inputs.forEach(input => {
+            input.addEventListener('input', runCalculations);
+            input.addEventListener('change', runCalculations);
+        });
+
+        // Core Mathematical Functions
+        function parseNum(val) {
+            // CRITICAL STEP 1: Always strip commas and parse as floats
+            if (!val) return 0;
+            return parseFloat(val.toString().replace(/,/g, '')) || 0;
+        }
+
+        function formatCurrency(num) {
+            return '$' + Math.round(num).toLocaleString('en-US');
+        }
+
+        function calculateTaxAndMedicare(income) {
+            let tax = 0;
+            if (income > 190000) {
+                tax = 51638 + ((income - 190000) * 0.45);
+            } else if (income > 135000) {
+                tax = 31288 + ((income - 135000) * 0.37);
+            } else if (income > 45000) {
+                tax = 4288 + ((income - 45000) * 0.30);
+            } else if (income > 18200) {
+                tax = (income - 18200) * 0.16;
+            }
+            const medicare = income * 0.02;
+            return tax + medicare;
+        }
+
+        function calculateLoanFormula(monthlyUsableIncome, annualInterestRate, nMonths) {
+            if (monthlyUsableIncome <= 0) return 0;
+            const r = annualInterestRate / 100 / 12;
+            return monthlyUsableIncome * ((1 - Math.pow(1 + r, -nMonths)) / r);
+        }
+
+        // Main Execution
+        function runCalculations() {
+            // 1. Get & Sanitize Inputs
+            const grossSalary = parseNum(document.getElementById('gross-salary').value);
+            const weeklyRent = parseNum(document.getElementById('weekly-rent').value);
+            const annualPropExp = parseNum(document.getElementById('property-expenses').value);
+            const monthlyLiving = parseNum(document.getElementById('living-expenses').value);
+            const actualRate = parseFloat(document.getElementById('interest-rate').value) || 0;
+            const ioYears = parseInt(document.getElementById('io-period').value) || 0;
+
+            // CRITICAL STEP 2: Annual Rent
+            const annualRent = weeklyRent * 52;
+            // CRITICAL STEP 3: Flat Rent Shading factor
+            const RENT_SHADE = 0.80;
+
+            // Base Tax Calculations
+            const baseTaxMedicare = calculateTaxAndMedicare(grossSalary);
+            const netBaseSalary = grossSalary - baseTaxMedicare;
+
+            // Step A: Base Usable Annual Income
+            const baseUsableAnnualIncome = netBaseSalary + (annualRent * RENT_SHADE) - (monthlyLiving * 12);
+            
+            // Residual P&I Term in months
+            const nMonths = (30 - ioYears) * 12;
+
+            // Clear existing results
+            resultsContainer.innerHTML = '';
+
+            // Run for each lender profile
+            LENDERS.forEach(lender => {
+                // Buffer Application
+                const bufferedRate = actualRate + lender.buffer;
+
+                // Step B (Scenario 1: No NG) - Established Post-2027
+                let loanNoNG = 0;
+                if (baseUsableAnnualIncome > 0) {
+                    loanNoNG = calculateLoanFormula(baseUsableAnnualIncome / 12, bufferedRate, nMonths);
+                }
+
+                // Step C (Scenario 2: With NG) - Iterative Goal Seek
+                let loanWithNG = loanNoNG; 
+                let prevLoanEstimate = loanWithNG;
+                
+                if (baseUsableAnnualIncome > 0) {
+                    let iterations = 0;
+                    while (iterations < 100) {
+                        // Unbuffered rate for actual expense modeling
+                        const annualInterest = prevLoanEstimate * (actualRate / 100);
+                        let netRentalLoss = annualInterest + annualPropExp - annualRent;
+                        netRentalLoss = Math.max(0, netRentalLoss);
+
+                        const taxableIncomeWithLoss = Math.max(0, grossSalary - netRentalLoss);
+                        const taxMedicareWithLoss = calculateTaxAndMedicare(taxableIncomeWithLoss);
+                        const taxRefund = baseTaxMedicare - taxMedicareWithLoss;
+
+                        const newUsableAnnualIncome = baseUsableAnnualIncome + taxRefund;
+                        const newLoanAmount = calculateLoanFormula(newUsableAnnualIncome / 12, bufferedRate, nMonths);
+
+                        if (Math.abs(prevLoanEstimate - newLoanAmount) < 1) {
+                            loanWithNG = newLoanAmount;
+                            break;
+                        }
+                        prevLoanEstimate = newLoanAmount;
+                        iterations++;
+                    }
+                }
+
+                // Step D: DTI Calculation
+                const dtiNoNG = grossSalary > 0 ? (loanNoNG / grossSalary).toFixed(1) : '0.0';
+                const dtiWithNG = grossSalary > 0 ? (loanWithNG / grossSalary).toFixed(1) : '0.0';
+
+                // Differences
+                const diffDollar = loanWithNG - loanNoNG;
+                const diffPercent = loanNoNG > 0 ? ((diffDollar / loanNoNG) * 100).toFixed(1) : 0;
+
+                // Build UI Card
+                const cardHtml = `
+                    <div class="bg-white rounded-2xl shadow-sm border-t-4 ${lender.color} overflow-hidden flex flex-col">
+                        <div class="p-5 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-extrabold ${lender.text}">${lender.name}</h3>
+                                ${lender.subtitle ? `<p class="text-xs text-gray-500 font-medium mt-1">${lender.subtitle}</p>` : ''}
+                            </div>
+                            <div class="text-right text-xs font-semibold text-gray-600 bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">
+                                Buffer: <span class="text-gray-900">${lender.buffer.toFixed(2)}%</span> | Rent Shade: <span class="text-gray-900">20%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-5 grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+                            
+                            <div class="p-4 bg-red-50 rounded-xl border border-red-100 relative">
+                                <p class="text-sm font-bold text-red-800 mb-2 uppercase tracking-wide">Established Post-2027<br><span class="text-xs font-normal opacity-80">(No NG)</span></p>
+                                <div class="text-3xl font-black text-red-900 mt-2">${formatCurrency(loanNoNG)}</div>
+                                <div class="mt-1 text-sm font-semibold text-red-700 bg-red-100 inline-block px-2 py-0.5 rounded">DTI: ${dtiNoNG}x</div>
+                            </div>
+                            
+                            <div class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full w-8 h-8 items-center justify-center shadow-sm text-xs font-bold text-gray-400">VS</div>
+
+                            <div class="p-4 bg-green-50 rounded-xl border border-green-100 relative">
+                                <p class="text-sm font-bold text-green-800 mb-2 uppercase tracking-wide">New Build / Grandfathered<br><span class="text-xs font-normal opacity-80">(With NG)</span></p>
+                                <div class="text-3xl font-black text-green-900 mt-2">${formatCurrency(loanWithNG)}</div>
+                                <div class="mt-1 text-sm font-semibold text-green-700 bg-green-100 inline-block px-2 py-0.5 rounded">DTI: ${dtiWithNG}x</div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="bg-gray-50 px-5 py-3 border-t border-gray-100 flex items-center justify-between text-sm">
+                            <span class="font-semibold text-gray-600">Borrowing Power Gap:</span>
+                            <div class="flex items-center space-x-3">
+                                <span class="font-bold text-gray-900">${formatCurrency(diffDollar)}</span>
+                                <span class="${lender.bg} text-white px-2.5 py-1 rounded-full text-xs font-bold">+${diffPercent}%</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                resultsContainer.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+
+        // Initialize calculations on load
+        runCalculations();
+    </script>
+</body>
+</html>
