@@ -22,14 +22,6 @@ Because this is a single-file application with no backend or external build depe
 1. Clone this repository to your local machine.
 2. Open the `.html` file directly in any modern web browser (Chrome, Safari, Edge, Firefox).
 
-## Live Deployment (GitHub Pages)
-This project is perfectly optimized for free static hosting via GitHub Pages.
-1. Navigate to your repository **Settings** on GitHub.
-2. Click on **Pages** in the left-hand sidebar.
-3. Under the **Build and deployment** section, set the source to `Deploy from a branch`.
-4. Select your `main` branch and the `/ (root)` folder, then click **Save**.
-5. Your calculator will be live at `https://[your-username].github.io/[repo-name]/` within a few minutes.
-
 ## Mathematical Assumptions & Logic
 * **Rent Shading:** A flat 20% shade (0.80 multiplier) is applied to all expected rental income.
 * **Input Sanitization:** The JS engine actively strips comma formatting dynamically as the user types to prevent `NaN` math errors.
